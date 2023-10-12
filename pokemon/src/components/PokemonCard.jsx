@@ -1,4 +1,4 @@
-
+import ProTypes from"prop-types";
 
 function PokemonCard(props){
    
@@ -10,7 +10,13 @@ function PokemonCard(props){
             <figcaption> {name} </figcaption>
         </figure>        
     )
-     
+PokemonCard.prototype={
+    pokemon: ProTypes.shape({
+     name: ProTypes.string.isRequired,
+     imgScr: ProTypes.string,
+    }).isRequired,
+ }
+ 
 }
  
 
