@@ -41,9 +41,9 @@ return (
 
       <div>
         <NavBar
-          pokemonIndex={pokemonIndex}
+          
           setPokemonIndex={setPokemonIndex}
-          pokemonLength={pokemonList.length -1} />
+          pokemonList={pokemonList} />
         <PokemonCard pokemon={pokemonList[pokemonIndex]} />
       </div>
      
